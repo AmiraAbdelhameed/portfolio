@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amira Abdelhameed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@600&family=Geist+Mono:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Just+Another+Hand&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+IE+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#252525",
+                        secondary: '#75c9c8',
+                        gray: '#dee2e6',
+                        background: 'rgba(222,226,230,0.42)',
+                        blur_background: 'rgba(63,63,63,1)',
+
+                    },
+                    backgroundImage: {
+                        'gradient': "url('images/g.png')",
+                        'second-gradient': "url('images/gradient.png')",
+                        'third-gradient': "url('images/g3.png')",
+                    }
+                },
+                screens: {
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                },
+                backgroundSize: {
+                    'auto': 'auto',
+                    'cover': 'cover',
+                    'contain': 'contain',
+                    '50%': '50%',
+                    '75%': '75%',
+                    '100%': '100%',
+                    '16': '4rem',
+                },
+                backgroundPosition: {
+                    'bottom': 'bottom',
+                    'bottom-4': 'center bottom 1rem',
+                    'center': 'center',
+                    'left': 'left',
+                    'left-bottom': 'left bottom',
+                    'left-top': 'left top',
+                    'right': 'right',
+                    'right-bottom': 'right bottom',
+                    'right-top': 'right top',
+                    'top': 'top',
+                    'top-4': 'center top 1rem',
+                },
+                fontFamily: {
+                    'hand': "Edu AU VIC WA NT Pre",
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-primary text-white ">
+    <header class="bg-primary ">
+        <nav
+            class="px-4 sm:container text-white py-3 my-3 sm:mx-auto flex justify-between items-center lg:px-32 rounded-tl-3xl rounded-br-3xl border-2 ">
+
+            <a href="#" class="text-secondary text-2xl font-bold capitalize font-hand font-bold tracking-[0.3rem]">Portofolio</a>
+            <button class="bg-primary text-white p-2  hover:text-secondary md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="hidden md:flex space-x-6">
+                <li class="hover:text-secondary hover:scale-125 transition duration-500 "><a href="#hero_section ">Home</a></li>
+                <li class="hover:text-secondary hover:scale-125 transition duration-500"><a href="#about_me">About-me</a></li>
+                <li class="hover:text-secondary hover:scale-125 transition duration-500"><a href="#skills">Skills</a></li>
+                <li class="hover:text-secondary hover:scale-125 transition duration-500"><a href="#projects">Projects</a></li>
+                <li class="hover:text-secondary hover:scale-125 transition duration-500"><a href="#contact_me">contact me </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- heading section  -->
+        <section class="hero_section  bg-primary bg-second-gradient bg-no-repeat bg-contain bg-right-top   ">
+            <div id="hero_section "
+                class="px-4 flex flex-col-reverse sm:container mx-auto text-white py-6 md:flex-row  items-center lg:px-32 ">
+                <div class="hero_content  md:w-6/12 space-y-8">
+                    <h1 class="text-secondary text-3xl md:text-5xl font-bold">Front-end Developer</h1>
+                    <p class=" md:text-xl text-justify">
+                        <span class="font-semibold ">Amira Abdelhameed,</span> a React front-end developer
+                        with a solid business foundation, I specialize in crafting user-centric, visually appealing
+                        interfaces
+                        that not only enhance user experience but also align with strategic business objectives.
+                    </p>
+                
+                    <button
+                        class="rounded font-semibold capitalize bg-secondary text-white p-2 transition duration-500 mr-4 hover:scale-125">
+                        contact me
+                    </button>
+                    <a href="https://drive.google.com/file/d/13636KpNH69WcXvn1LTbRvcIi4dTruEdK/view?usp=sharing" target="_blank"
+                        class="rounded font-semibold capitalize inline-block bg-gray text-primary p-2 transition duration-500 hover:scale-125">
+                        see resume
+                    </a>
+                </div>
+                <figure class="w-6/12 ">
+                    <img src="images/hero.png" alt="developer image">
+                </figure>
+            </div>
+        </section>
+        <!-- about me section  -->
+       
+        <section class="about_me  py-24 relative" id ="about_me">
+            <img src="images/circle.png" alt="" class="absolute top-8 left-[-24rem] w-[35%] z-[-100]">
+            <h2
+                class="text-white w-[14.5rem] mx-auto text-center  mb-4 md:font-bold text-3xl p-4 border-2  md:border-4 rounded-tl-3xl rounded-br-3xl  border-white ">
+                About Me</h2>
+            <div class="px-4  sm:container sm:mx-auto  lg:px-32 ">
+                <div class="about_content flex flex-col-reverse  justify-between items-center gap-8 md:flex-row">
+                    <div class="md:w-6/12 ">
+                        <p class=" text-justify font-semibold">
+                            <span class="text-secondary text-2xl">Hello!</span><br>
+                            I’m a front-end developer with a passion for creating seamless, interactive web applications
+                            using React.
+                            With a strong foundation in business and technology, I bring a unique perspective to the
+                            development process.
+                            My journey began with a drive to merge innovative technology with practical business
+                            solutions,
+                            leading me to specialize in front-end development.
+                        </p>
+                
+                    </div>
+                    <figure class="w-6/12 md:w-4/12 border-2 rounded-tl-3xl rounded-br-3xl  border-white truncate">
+                        <img src="images/hero.png" alt="about image">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- skills section  -->
+        <section class="skills px-4 sm:container mx-auto lg:px-32 relative" id ='skills'>
+            <img src="images/triple.png" alt=""
+                class="absolute  top-[2rem] left-[1rem] lg:left-[-4rem] w-[10%] z-[-100]  overflow-hidden	">
+
+            <h2
+                class="text-white w-[14.5rem] mx-auto text-center  mb-4 md:font-bold text-3xl p-4 border-2  md:border-4 rounded-tl-3xl rounded-br-3xl  border-white ">
+                My Skills</h2>
+            <div class="skill_cards grid grid-cols-2 gap-4 py-12 md:grid-cols-3 lg:grid-cols-4  ">
+                <div class="skill_card mx-auto bg-blur_background text-white font-bold uppercase p-4 border-2  
+                     border-blur_background  rounded-xl text-center space-y-4 
+                     flex flex-col items-center justify-center transition duration-500 hover:bg-gray hover:text-black">
+                    <img src="images/html_logo.png" alt="html" class="w-6/12">
+                    <h3 class=" md:text-2xl ">Html</h>
+                </div>
+                <div class="skill_card mx-auto bg-blur_background text-white font-bold uppercase p-4 border-2  
+                border-blur_background  rounded-xl text-center space-y-4 
+                flex flex-col items-center justify-center  duration-500 hover:bg-gray hover:text-black">
+                    <img src="images/css_logo.png" alt="css" class="w-6/12">
+                    <h3 class="md:text-2xl ">css</h>
+                </div>
+                <div class="skill_card mx-auto bg-blur_background text-white font-bold uppercase p-4 border-2  
+                border-blur_background  rounded-xl text-center space-y-4
+                 flex flex-col items-center justify-center  duration-500 hover:bg-gray hover:text-black">
+                    <img src="images/js_logo.png" alt="js" class="w-6/12">
+                    <h3 class=" md:text-2xl ">js</h>
+                </div>
+                <div class="skill_card mx-auto bg-blur_background text-white font-bold uppercase p-4 border-2  
+                border-blur_background  rounded-xl text-center space-y-4 
+                flex flex-col items-center justify-center  duration-500 hover:bg-gray hover:text-black">
+                    <img src="images/tailwind_logo.svg" alt="tailwind" class="w-6/12 ">
+                    <h3 class=" md:text-2xl ">tailwindcss</h>
+                </div>
+                <div class="skill_card mx-auto bg-blur_background text-white font-bold uppercase p-4 border-2  
+                border-blur_background  rounded-xl text-center space-y-4 
+                flex flex-col items-center justify-center  duration-500 hover:bg-gray hover:text-black">
+                    <img src="images/bootstrap_logo.svg" alt="bootstrap" class="w-6/12">
+                    <h3 class=" md:text-2xl ">bootstrap</h>
+                </div>
+                <div class="skill_card mx-auto bg-blur_background text-white font-bold uppercase p-4 border-2  
+                border-blur_background  rounded-xl text-center space-y-4 
+                flex flex-col items-center justify-center  duration-500 hover:bg-gray hover:text-black">
+                    <img src="images/typescript_logo.svg" alt="bootstrap" class="w-6/12">
+                    <h3 class=" md:text-2xl ">Typescript</h>
+                </div>
+                <div class="skill_card mx-auto bg-blur_background text-white font-bold uppercase p-4 border-2  
+                border-blur_background  rounded-xl text-center space-y-4 
+                flex flex-col items-center justify-center  duration-500 hover:bg-gray hover:text-black">
+                    <img src="images/React-icon.svg.png" alt="bootstrap" class="w-6/12">
+                    <h3 class=" md:text-2xl ">React js</h>
+                </div>
+            </div>
+        </section>
+        <!-- projects section  -->
+        <section class="projects px-4 py-12 sm:container mx-auto lg:px-32" id="projects">
+            <h2
+                class="text-white w-[14.5rem] mx-auto text-center  mb-4 md:font-bold text-3xl p-4 border-2  md:border-4 rounded-tl-3xl rounded-br-3xl  border-white ">
+                My Projects </h2>
+            <div class="projects_container py-4 flex justify-between items-center flex-col-reverse md:flex-row ">
+
+                <div class="project_content md:w-6/12 ">
+                    <h3 class="website_title text-secondary font-bold text-2xl" id="slider-content">Night trip</h3>
+                    <p class="website_info text-justify my-8">
+                    </p>
+                    <p class="website_dev_tools  font-bold">
+
+                    </p>
+                    <a href="" target="_blank"
+                        class="view_website inline-block rounded font-semibold capitalize bg-secondary text-white p-2 transition duration-500 mt-8 hover:scale-125">
+                        View website</a>
+                </div>
+                <div class="project_images relative md:w-2/5">
+                    <figure class="image_slider border-2 rounded-xl border-white">
+                        <img src="" alt=""id ='slider-img'>
+                    </figure>
+                    <div class="buttons relative p-4">
+                        <button  class="left_arrow absolute left-16 md:left-28 bottom-0 hover:text-secondary"><i
+                                class="fa-solid fa-arrow-left"></i></button>
+                        <button class="right_arrow absolute right-16 md:right-28 bottom-0 hover:text-secondary"><i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact me section  -->
+        <section class="contact_me px-4 py-12 sm:container mx-auto lg:px-32" id="contact_me">
+            <h2
+                class="text-white w-[14.5rem] mx-auto text-center  mb-4 md:font-bold text-3xl p-4 border-2  md:border-4 rounded-tl-3xl rounded-br-3xl  border-white ">
+                Contact me </h2>
+            <div class="contact_info mx-auto flex flex-col md:flex-row gap-4 justify-center items-center ">
+                <div class="contact_card p-4  rounded-xl bg-blur_background md:w-2/5 space-x-4">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>amerakhames42@gmail.com</span>
+                </div>
+                <div class="contact_card p-4   rounded-xl bg-blur_background md:w-2/5 space-x-4">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>01210439137</span>
+                </div>
+            </div>
+            <div class="social_media my-8 text-center text-3xl mx-auto space-x-6 ">
+                <a href="#" class="hover:text-secondary"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-secondary"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-secondary"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-secondary"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </section>
+        <!-- footer section  -->
+        <footer class="px-4 py-12 sm:container mx-auto lg:px-32 relative ">
+            <div class="line border-[1px] border-white w-[100%] left-0 absolute"></div>
+            <div class="footer_container text-center py-4 text-gray">
+                <span>
+                    &copy; 2025 All rights reserved by Amira Abdelhameed
+                </span>
+
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
