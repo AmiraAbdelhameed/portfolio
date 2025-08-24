@@ -19,7 +19,7 @@ const slides = [
         img: "./images/Ayady.png",
         text: "Ayady",
         info: 'Ayady is a platform that connects charities with donors in one place, making donations easy, safe, and clear. We aim to use technology to support charity work and encourage everyone to help make a positive change.',
-        tools: `Created with Reactjs, Redux toolkit , MUI, and supabase ,
+        tools: `Created with Reactjs, Redux toolkit , MUI, and supabase `,
         href:'https://ayady.vercel.app/'
     },
        {
@@ -28,7 +28,7 @@ const slides = [
         info: 'website for great outdoors to  discover thrilling great and different places, unique destinations, and exciting activities tailored for great outdoors',
         tools: `Created with tailwindcss and Reactjs`,
         href:'https://great-outdoors-psi.vercel.app/'
-    },
+    }
 
 ];
 
